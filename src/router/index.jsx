@@ -5,6 +5,7 @@ import {
   Link,
 } from "react-router-dom";
 import Error404 from "../screens/Error404";
+import Home from "../screens/home";
 import Pokedex from "../screens/pokedex";
 
 function RouterRedirect() {
@@ -12,7 +13,7 @@ function RouterRedirect() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<h1>Server ON</h1>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/pokedex" element={<Pokedex/>}/>
           <Route path="*" element={<Error404/>}/>
         </Routes>

@@ -15,9 +15,7 @@ root.render(
                     </div>
                 </div>
                 <div id="screenDiv">
-                  <div id='screen'>
                     <App/>
-                  </div>
                 </div>
               <footer id="pokemonButtonsLow" className="pokemonButtons"></footer>
           </div>

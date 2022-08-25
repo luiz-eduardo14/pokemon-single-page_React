@@ -1,7 +1,7 @@
 import './App.css';
 import RouterRedirect from '../../router/index';
 
-function App() {
+function App({}) {
   return (
     <>
       <RouterRedirect/>
