@@ -1,9 +1,11 @@
+import Start from './Start';
+import TitlePokemon from './titlePokemon/index';
+
 function Home() {
    return(
     <div id="screen" className="start">
-        <div id="startDiv">
-            <span id="startText">Press Start</span>
-        </div>
+            <TitlePokemon/>
+            <Start/>
     </div>
    ) 
 }
