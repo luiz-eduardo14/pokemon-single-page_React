@@ -63,10 +63,6 @@
 .start{
     background-image: url("https://i.ibb.co/5x5dDyy/background-pokemon-emerald.png");
 }
-@font-face {
-    font-family: pokemonFont;
-    src: url(https://filedropper.com/d/s/download/pIwnpu5cyPFysZgQkn8d35slMYo1Vv);
-}
 .TextPokemon{
     font-family: pokemonFont;
 }

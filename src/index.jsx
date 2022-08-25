@@ -10,8 +10,7 @@ root.render(
           <div id='content_pokemon'>
             <div id="pokemonButtonsTop" className="pokemonButtons">
                     <div id="pokemonButtonsTopContent">
-                        <span className="pokedexCircle circleLow">
-                        </span>
+                        <span className="pokedexCircle circleLow"></span>
                         <span className="pokedexCircle circleLow"></span>
                     </div>
                 </div>
