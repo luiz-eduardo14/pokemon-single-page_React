@@ -1,11 +1,11 @@
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams } from 'react-router-dom';
 import {params} from '../../private/functions/params';
 
 function Pokedex() {
-    let [searchParams, setSearchParams] = useSearchParams(params());
+    const [searchParams,setSearchParams] = useSearchParams({pg:231});
     return(
         <div id='screen'>
-            ola
+            {searchParams.get('pg')}
         </div>
     )
 }
