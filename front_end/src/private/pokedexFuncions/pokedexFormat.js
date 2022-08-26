@@ -1,4 +1,4 @@
-export const pokedex  = require('./files/pokedex.json').map((pokemon)=>{
+const pokedex  = require('../files/pokedex.json').map((pokemon)=>{
     return {name:pokemon.name.english
             ,type:pokemon.type
             ,abilities:[pokemon.profile.ability[0],pokemon.profile.ability[1]]
@@ -7,3 +7,6 @@ export const pokedex  = require('./files/pokedex.json').map((pokemon)=>{
             ,smallImage:pokemon.image.sprite
             ,species:pokemon.species.replace('Pokémon','').trim()}
 });
+
+module.exports = pokedex;
+
