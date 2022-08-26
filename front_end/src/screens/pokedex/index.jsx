@@ -1,5 +1,4 @@
 import { useSearchParams, useParams, useNavigate } from 'react-router-dom';
-import {params} from '../../private/functions/params';
 import { useEffect } from 'react';
 import { useState } from 'react';
 

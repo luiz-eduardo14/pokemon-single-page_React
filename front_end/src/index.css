@@ -61,7 +61,7 @@
 }
 
 .start{
-    background-image: url("https://raw.githubusercontent.com/luiz-eduardo14/pokemon-single-page_React/main/images/background_pokemon_emerald.png");
+    background-image: url("https://raw.githubusercontent.com/luiz-eduardo14/pokemon-single-page_React/main/front_end/images/background_pokemon_emerald.png");
 }
 .TextPokemon{
     font-family: pokemonFont;

@@ -24,11 +24,12 @@ app.get('/pokedex/:pg',function (req,res) {
         const page = parseInt(req.params.pg)-1;
         let pageI = page-3;
         let pageF = page+4;
-        //console.log(pokedexPages.length);
         while (!pokedexPages[pageF]) {
             pageF--;
         }
-        res.json({pageI:pageI,array:pokedexPages[page],pageF:pageF});
+        pokedexPages[page] ? 
+                            res.json({pageI:pageI,array:pokedexPages[page],pageF:pageF}) 
+                                : res.sendStatus(400);
     } catch (error) {
         res.sendStatus(500)
     }
