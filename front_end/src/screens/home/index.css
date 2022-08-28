@@ -7,3 +7,10 @@
   justify-content: center;
   margin-top: 20px;
 }
+#startText{
+  display: block;
+  font-family: pokemonFont;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}

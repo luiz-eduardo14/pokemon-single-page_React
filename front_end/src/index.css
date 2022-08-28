@@ -61,13 +61,6 @@
     display: flex;
     justify-content: center;
 }
-#startText{
-    display: block;
-    font-family: pokemonFont;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
 #StartDiv{
     display: flex;
     flex-direction: column;

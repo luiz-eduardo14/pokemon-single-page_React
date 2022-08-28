@@ -1,5 +1,6 @@
 import Start from './Start';
 import TitlePokemon from './titlePokemon/index';
+import './index.css'
 
 function Home() {
    return(

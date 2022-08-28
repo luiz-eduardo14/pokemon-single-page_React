@@ -1,5 +1,4 @@
-import { Navigate, useNavigate } from "react-router";
-
+import { Navigate, useNavigate } from "react-router";   
 function Start() {
     const navigaty = useNavigate();
     return(
