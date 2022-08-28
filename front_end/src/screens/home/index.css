@@ -1,0 +1,9 @@
+.start{
+  background-image: url("https://raw.githubusercontent.com/luiz-eduardo14/pokemon-single-page_React/main/front_end/images/home/background_pokemon_emerald.png");
+}
+#titleImagePokemon{
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
