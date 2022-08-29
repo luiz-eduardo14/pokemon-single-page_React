@@ -23,7 +23,7 @@ app.get("/pokedex/:pg", cors(), function (req, res) {
   try {
     const page = parseInt(req.params.pg) - 1;
     let pageI = page - 3;
-    let pageF = page + 4;
+    let pageF = page + 5;
     while (!pokedexPages[pageF]) {
       pageF--;
     }

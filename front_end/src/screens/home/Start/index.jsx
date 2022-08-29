@@ -4,10 +4,10 @@ function Start() {
     const navigaty = useNavigate();
     return(
         <div id="StartDiv">
-            <span id="startText">Press Start</span>
+            <span id={styles.startText}>Press Start</span>
             <img onClick={
                 (event)=>{
-                    navigaty('/pokedex?pg=1');
+                    navigaty('/pokedex?pg=1',{state:{ola:'dasdsa'}});
                 }
             } id='startImage' src='http://localhost:5000/images/home/pokemonButtonStart.png' height={80} width={80}></img>
         </div>

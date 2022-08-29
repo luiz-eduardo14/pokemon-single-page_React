@@ -1,0 +1,11 @@
+#pagesListPokedex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 790px;
+  height: 60px;
+}
+#pagesListPokedex :not(:first-child){
+  margin-left: 20px;
+}
