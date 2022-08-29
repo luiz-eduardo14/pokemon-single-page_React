@@ -1,4 +1,5 @@
 import { Navigate, useNavigate } from "react-router";   
+import styles from './index.module.css';
 function Start() {
     const navigaty = useNavigate();
     return(
@@ -8,7 +9,7 @@ function Start() {
                 (event)=>{
                     navigaty('/pokedex?pg=1');
                 }
-            } id='startImage' src='https://raw.githubusercontent.com/luiz-eduardo14/pokemon-single-page_React/main/front_end/images/home/pokemonButtonStart.png' height={80} width={80}></img>
+            } id='startImage' src='http://localhost:5000/images/home/pokemonButtonStart.png' height={80} width={80}></img>
         </div>
     )
 }

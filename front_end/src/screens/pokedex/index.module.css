@@ -1,0 +1,15 @@
+#titlePokedex {
+  display:block;
+  text-align:center;
+  font-family: pokemonFont;
+  font-size: 35px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+#pokedexList {
+  display: flex;
+  margin:0 auto;
+  width: 900px;
+  height: 330px;
+  flex-wrap: wrap;
+}
