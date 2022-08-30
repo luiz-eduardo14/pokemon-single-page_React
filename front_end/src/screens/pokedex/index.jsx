@@ -24,10 +24,10 @@ function Pokedex() {
     SetPg(searchParams.get('pg'))
     } 
     return(
-        <div id='screen' style={{backgroundColor:'#fff'}}>
+        <div id='screen' style={{backgroundColor:'#fff',}}>
             <BackPage src={'http://localhost:5000/images/backPage.svg'} to={'/'}/>
-            <span id={styles.titlePokedex}>Pokedex</span>
-            <div id={styles.pokedexList}>
+            <span id={'titlePokedex'}>Pokedex</span>
+            <div id={'pokedexList'}>
             {pokemons.length!=0 && pokemons.map((pokemon)=>{
                 return <Pokemon key={pokemon.id} data={pokemon}></Pokemon>
             })}
