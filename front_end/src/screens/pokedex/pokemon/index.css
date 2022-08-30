@@ -33,3 +33,7 @@
     user-select: none;
     cursor: pointer;
 }
+.black{
+    border: 10px solid #fff;
+    c: #000;   
+}

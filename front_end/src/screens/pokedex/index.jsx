@@ -24,7 +24,7 @@ function Pokedex() {
     SetPg(searchParams.get('pg'))
     } 
     return(
-        <div id='screen' style={{backgroundColor:'#fff',}}>
+        <div id='screen' style={{backgroundColor:'#98CB98',}}>
             <BackPage src={'http://localhost:5000/images/backPage.svg'} to={'/'}/>
             <span id={'titlePokedex'}>Pokedex</span>
             <div id={'pokedexList'}>
