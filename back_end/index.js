@@ -38,7 +38,7 @@ app.get("/pokemon", (req, res) => {
   const namePokemon = req.query["name"];
   const Result = pokemonFilter(namePokemon);
   if (Result) {
-    res.sendFile(indexHTML);
+    res.json(Result);
   } else {
     res.send("not found, please send correct name.");
   }

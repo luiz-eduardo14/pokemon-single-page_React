@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import BackPage from '../../components/backPage';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 function Pokemon() {
   const [pokemon,setPokemon] = useState({});
-  const navigate = useNavigate();
+  const [searchParams,setSearchParams] = useSearchParams();
+  const [name,setName] = useState(searchParams.get('name'));
   useEffect(()=>{
     
   },[pokemon])

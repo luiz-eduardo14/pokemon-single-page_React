@@ -4,6 +4,7 @@ import BackPage from '../../components/backPage';
 import styles from './index.module.css';
 import Pokemon from './pokemon';
 import PageList from './pageList';
+import pokedexBodyRequest from '../../requests/pokedexRequests/pokedexBodyRequest'
 
 function Pokedex() {
     const [searchParams,setSearchParams] = useSearchParams();
@@ -13,12 +14,7 @@ function Pokedex() {
     const navegate = useNavigate();
     const [pokemons,setPokemons] = useState([]);
     useEffect(()=>{
-    async function requestPokedex(){ 
-    const pokemonsarray = await fetch(`http://localhost:5000/pokedex/${pg}`,{method:'GET'}).then((response)=> response.json())
-    setPokemons(pokemonsarray.array);
-    setNumberPages({init:pokemonsarray.pageI,last:pokemonsarray.pageF})
-    }
-    requestPokedex();
+        pokedexBodyRequest({pg,setNumberPages,setPokemons});
     },[pg])
     if(searchParams.get('pg')!=pg){
     SetPg(searchParams.get('pg'))
