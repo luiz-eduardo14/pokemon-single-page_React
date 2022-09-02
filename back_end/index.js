@@ -34,7 +34,7 @@ app.get("/pokedex/:pg", cors(), function (req, res) {
     res.sendStatus(500);
   }
 });
-app.get("/pokemon", (req, res) => {
+app.get("/pokemon", cors(), (req, res) => {
   const namePokemon = req.query["name"];
   const Result = pokemonFilter(namePokemon);
   if (Result) {
