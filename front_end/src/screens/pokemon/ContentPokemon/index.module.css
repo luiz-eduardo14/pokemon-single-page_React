@@ -1,0 +1,53 @@
+#ContentPokemon{
+  width: 450px;
+  height: 450px;
+  border-radius: 00px 30px 00px 30px;
+  }
+
+#divTitlePokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CCCCFF;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 5px;
+  border-radius: 00px 30px 00px 00px;
+}
+#divFooterPokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 5px;
+  border-radius: 00px 00px 00px 30px;
+}
+.TitlePokemon{
+  font-family: pokemonFont;
+  font-size: 20px;
+}
+.TextPokemon{
+  font-family: pokeomnFont;
+  font-size: 16px;
+}
+#TextFooter{
+  text-align: center;
+  width: 400;
+}
+.BigTextPokemon{
+  font-size: 8px;
+}
+.featuresPokemon{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 80px 80px;
+  width: 100%;
+  height: 80px;
+}
+.NameFeaturesPokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

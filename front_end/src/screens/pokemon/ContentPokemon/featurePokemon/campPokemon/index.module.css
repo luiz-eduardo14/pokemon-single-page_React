@@ -1,0 +1,20 @@
+.campFeaturePokemon{
+  display: flex;
+  width: 110px;
+  height: 45px;
+  background-color:#A49F9F;
+  margin-left: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.4em #000;
+}
+.campFeaturePokemon:nth-child(3){
+  margin-right: 7px;
+}
+.campNameFeaturePokemon{
+  font-family: pokemonFont;
+  font-size: 5.7px;
+  color: #ffffff;
+  word-wrap: unset;
+}

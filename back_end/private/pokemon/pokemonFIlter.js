@@ -1,14 +1,14 @@
-const pokemons = require('../pokedex/pokedex.json');
+const pokedex = require("../pokedex/pokedex");
 
 function pokemon(name) {
-    let pokemonResult;
-    for (const pokemon of pokemons) {        
-        if(pokemon.name.english.toLowerCase() == name.toLowerCase()){
-            pokemonResult = pokemon;
-            break;
-        }
+  let pokemonResult = null;
+  for (const pokemon of pokedex) {
+    if (pokemon.name.toLowerCase() === name.toLowerCase()) {
+      pokemonResult = pokemon;
+      break;
     }
-    return pokemonResult;
+  }
+  return pokemonResult;
 }
 
 module.exports = pokemon;
