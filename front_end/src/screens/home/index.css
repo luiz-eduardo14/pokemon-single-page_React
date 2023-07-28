@@ -1,3 +1,12 @@
+@keyframes animatedBackground {
+  from {background-position: 0%} /* Define that we'll start at position 100% left (off screen to the right) */
+  to {background-position: 100%} /* Define that we'll end at -25% left (off screen to the left) */
+}
+
 .start{
   background-image: url("http://localhost:5000/images/home/background_pokemon_emerald.png");
+  /* background-repeat: repeat-x;
+  background-attachment: fixed;
+  animation-direction: alternate;
+  animation: animatedBackground 20s linear infinite; */
 }
