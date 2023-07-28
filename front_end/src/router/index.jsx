@@ -15,6 +15,7 @@ function RouterRedirect() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="/pokedex" element={<Pokedex/>}/>
           <Route path="*" element={<Error404/>}/>
           <Route path="/pokemon" element={<Pokemon/>}/>
